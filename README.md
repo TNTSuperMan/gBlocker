@@ -1,15 +1,25 @@
-# googleblocker
+# gBlocker
+Googleブロッカー完全版!!!!!
 
-To install dependencies:
+## Googleブロッカーのメリット
+- ほとんどのサイトに設置してある~~GoogleAnalytics~~**スパイウェア**による監視・広告の最適化から逃れられる
+- YouTubeを断つことができる
+- Googleがばら撒く詐欺広告に捉われる心配が無くなる
 
-```bash
-bun install
-```
+## 開発者向け
+### 実態
+declarativeNetRequestを使う~~Chrome~~Chromium拡張機能
 
-To run:
+### 導入方法
+1. クローン
+1. `bun i`
 
-```bash
-bun run index.ts
-```
+### ビルド方法
+`bun build.ts`
 
-This project was created using `bun init` in bun v1.2.16. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+### ファイル構成
+|ファイル|名目|
+|-|-|
+|manifest.json|拡張機能となるmanifest.json|
+|src/blocks.ts|declarativeNetRequestのルールを生成するコード|
+|src/index.ts|将来background.jsになる予定|
