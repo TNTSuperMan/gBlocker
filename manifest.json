@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json.schemastore.org/chrome-manifest",
+    "manifest_version": 3,
+    "name": "gBlocker",
+    "description": "gの広告・監視からあなたを守ります。#Googleを許すな",
+    "version": "2.9.1",
+    "permissions": ["declarativeNetRequest"],
+    "host_permissions": ["<all_urls>"],
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "dont_forgive_google",
+            "enabled": true,
+            "path": "block.json"
+        }]
+    }
+}

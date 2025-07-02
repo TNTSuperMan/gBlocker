@@ -1,0 +1,13 @@
+{
+  "name": "googleblocker",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/chrome": "^0.0.329"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
