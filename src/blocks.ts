@@ -6,6 +6,7 @@ const blacklist = [
     "||googletagmanager.com",
     "||youtube.com",
     "||googlesyndication.com",
+    "||doubleclick.net",
 ] as (RegExp | string)[];
 
 const json = blacklist.map((e,i)=>({
