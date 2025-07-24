@@ -7,6 +7,15 @@ const blacklist = [
     "||youtube.com",
     "||googlesyndication.com",
     "||doubleclick.net",
+    "||gstatic.com",
+    "||googleapis.com",
+    "||googleusercontent.com",
+    "||googleemail.com",
+    "||googlecode.com",
+    "||googlehosted.com",
+    "||googledrive.com",
+    "||googleearth.com",
+    "||googlefonts.com",
 ] as (RegExp | string)[];
 
 const json = blacklist.map((e,i)=>({
