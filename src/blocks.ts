@@ -16,6 +16,7 @@ const blacklist = [
     "||googledrive.com",
     "||googleearth.com",
     "||googlefonts.com",
+    /^https?:\/\/(\w*\.)*(google)(\.\w{1,3}){1,2}\//
 ] as (RegExp | string)[];
 
 const json = blacklist.map((e,i)=>({
