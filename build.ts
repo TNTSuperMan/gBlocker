@@ -6,8 +6,7 @@ const json = blacklist.map((e,i)=>({
     priority: 1,
     action: { type: "block" },
     condition: {
-        regexFilter: e instanceof RegExp ? e.source : undefined,
-        urlFilter: typeof e === "string" ? e : undefined,
+        regexFilter: e.source,
         resourceTypes: [ "main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "csp_report", "media", "websocket", "webtransport", "webbundle", "other" ]
     }
 }))
