@@ -1,3 +1,22 @@
+const gen_reg = (name: string) =>
+    new RegExp(`^https?:\\/\\/(?:\\w+\\.)*${name}(?:\\.\\w{2,5})+(?:\\/|$)`)
+
 export const blacklist = [
-    /^https?:\/\/(\w*\.)*(google|google-analytics|googletagmanager|youtube|googlesyndication|doubleclick|gstatic|googleapis|googleusercontent|googleemail|googlecode|googlehosted|googledrive|googleearth|googlefonts)(\.\w{1,5}){1,5}\//,
+    ...[
+        "google",
+        "google-analytics",
+        "googletagmanager",
+        "youtube",
+        "googlesyndication",
+        "doubleclick",
+        "gstatic",
+        "googleapis",
+        "googleusercontent",
+        "googleemail",
+        "googlecode",
+        "googlehosted",
+        "googledrive",
+        "googleearth",
+        "googlefonts",
+    ].map(gen_reg)
 ] as RegExp[];
