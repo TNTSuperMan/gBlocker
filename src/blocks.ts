@@ -1,5 +1,5 @@
 const gen_reg = (name: string) =>
-    new RegExp(`^https?://(\\w*\\.)*${name}(\\.\\w{1,5}){1,5}/?`)
+    new RegExp(`^https?:\\/\\/(?:\\w+\\.)*${name}(?:\\.\\w{2,5})+`)
 
 export const blacklist = [
     ...[
